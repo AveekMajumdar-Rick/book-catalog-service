@@ -1,6 +1,5 @@
 package microservices.test.bookcatalogservice.controller;
 
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,7 @@ public class BookCatalogController {
 	@RequestMapping("/{userId}")
 	public List<BookCatalog> getBookCatalog(@PathVariable("userId") String userId) {
 
-		return Collections.singletonList(new BookCatalog(12, Integer.parseInt(userId), "Catch 22", 4));
+		return bookCatalogService.getBookCatalogs(Integer.parseInt(userId));
 	}
 
 }
