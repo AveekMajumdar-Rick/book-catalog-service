@@ -2,23 +2,23 @@ package microservices.test.bookcatalogservice.model;
 
 public class Book {
 
-	private Integer bookId;
+	private String bookId;
 	private String bookName;
 
 	public Book() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Book(Integer bookId, String bookName) {
+	public Book(String bookId, String bookName) {
 		this.bookId = bookId;
 		this.bookName = bookName;
 	}
 
-	public Integer getBookId() {
+	public String getBookId() {
 		return bookId;
 	}
 
-	public void setBookId(Integer bookId) {
+	public void setBookId(String bookId) {
 		this.bookId = bookId;
 	}
 

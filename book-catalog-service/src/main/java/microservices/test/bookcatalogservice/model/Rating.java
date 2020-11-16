@@ -2,7 +2,7 @@ package microservices.test.bookcatalogservice.model;
 
 public class Rating {
 
-	private Integer bookId;
+	private String bookId;
 	private Integer userId;
 	private int rating;
 	
@@ -10,17 +10,17 @@ public class Rating {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Rating(Integer bookId, Integer userId, int rating) {
+	public Rating(String bookId, Integer userId, int rating) {
 		this.bookId = bookId;
 		this.userId = userId;
 		this.rating = rating;
 	}
 
-	public Integer getBookId() {
+	public String getBookId() {
 		return bookId;
 	}
 
-	public void setBookId(Integer bookId) {
+	public void setBookId(String bookId) {
 		this.bookId = bookId;
 	}
 

@@ -2,7 +2,7 @@ package microservices.test.bookcatalogservice.model;
 
 public class BookCatalog {
 
-	private Integer bookId;
+	private String bookId;
 	private Integer userId;
 	private String bookName;
 	private int rating;
@@ -10,18 +10,18 @@ public class BookCatalog {
 	public BookCatalog() {
 	}
 
-	public BookCatalog(Integer bookId, Integer userId, String bookName, int rating) {
+	public BookCatalog(String bookId, Integer userId, String bookName, int rating) {
 		this.bookId = bookId;
 		this.userId = userId;
 		this.bookName = bookName;
 		this.rating = rating;
 	}
 
-	public Integer getBookId() {
+	public String getBookId() {
 		return bookId;
 	}
 
-	public void setBookId(Integer bookId) {
+	public void setBookId(String bookId) {
 		this.bookId = bookId;
 	}
 
